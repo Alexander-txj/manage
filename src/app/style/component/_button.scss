@@ -1,0 +1,63 @@
+.btn-primary {
+  background-color: colors(button, base) !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: colors(button, hover);
+}
+
+.btn-primary:active {
+  background-color: colors(button, hover);
+}
+
+.btn-primary:focus {
+  background-color: colors(button, hover);
+}
+
+.btn-primary:active:hover {
+  background-color: colors(button, hover);
+}
+
+.btn-danger {
+  background-color: #ec726f;
+  border: none;
+}
+
+button.btn-default {
+  border-color: colors(button, base);
+  color: colors(button, base);
+}
+
+button.btn-default:hover {
+  border-color: colors(button, hover);
+  color: colors(button, hover);
+  background-color: #FFFFFF;
+}
+
+button.btn-default:focus {
+  border-color: colors(button, hover);
+  color: colors(button, hover);
+  background-color: #FFFFFF;
+}
+
+button.btn-default:active {
+  border-color: colors(button, hover);
+  color: colors(button, hover);
+  background-color: #FFFFFF;
+}
+
+button.btn-default:active:hover {
+  border-color: colors(button, hover);
+  color: colors(button, hover);
+  background-color: #FFFFFF;
+}
+
+.btn-add {
+  background-color: #FFFFFF;
+  border: none;
+  height: 30px;
+  :hover {
+    background-color: #FFFFFF;
+  }
+}

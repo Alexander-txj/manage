@@ -1,0 +1,54 @@
+$brandColors: (
+        body: (
+                base: #F3F3F3
+        ),
+        button: (
+                base: #5095eb,
+                hover: #0085d7,
+        ),
+        buttonDelete: (
+                base: rgba(227, 46, 48, 0.6),
+                hover: #e32e30,
+        ),
+        navbar: (
+                base: #FFFFFF
+        ),
+        boxShadow: (
+                base: rgba(0, 0, 0, 0.15)
+        ),
+        sidebar: (
+                base: #34557d,
+                hover: #27405e
+        ),
+        sidebarText: (
+                base: #9BA5AE,
+                hover: darken(#9BA5AE, 8%)
+        ),
+        pills: (
+                base: #008FED,
+                family: #FF387E,
+                acquaintances: #B5D158,
+                following: #DB5A3D
+        ),
+        status: (
+                danger: #E32E30,
+                error: #B72B2C,
+                success: #50D749,
+        ),
+        border: (
+                base: #d5d5d5
+        ),
+        panel: (
+                //base: #408FDA
+                base: #588DD8
+        ),
+        panelColor: (
+
+        )
+);
+
+@function colors($color, $tone: "base") {
+  @return map-get(map-get($brandColors, $color), $tone);
+}
+
+

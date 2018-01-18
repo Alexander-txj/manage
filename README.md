@@ -1,2 +1,8 @@
-# manage
-自己设想的一个管理项目
+### build
+cnpm run build
+
+### run
+cnpm start
+
+本机IP + 端口（9999）
+

@@ -1,0 +1,32 @@
+ng-atomic-notify {
+  top: -25px;
+}
+
+.atomic-notify {
+  .atomic-notify-item {
+    border-radius: 4px;
+    .body > p {
+      margin: 0;
+    }
+    .close {
+      opacity: 1;
+      background: transparent;
+      text-shadow: none;
+      &:hover {
+        color: rgba(0, 0, 0, .5);
+      }
+    }
+  }
+
+  .atomic-notify-warning {
+    background-color: #F9A937;
+  }
+
+  .atomic-notify-error {
+    background-color: #F9A937;
+  }
+
+  .atomic-notify-success {
+    background-color: #73B573;
+  }
+}

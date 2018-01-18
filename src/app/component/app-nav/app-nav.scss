@@ -1,0 +1,42 @@
+.app-nav {
+  background: #1C2B36;
+  color: #209E91;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  right: 0;
+  height: 66px;
+  line-height: 66px;
+  padding: 0 20px;
+  display: flex;
+  z-index: 1000;
+  transition: left .35s ease-in-out;
+  .expand & {
+    left: 60px;
+  }
+  .nav {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 15px;
+    max-width: 80%;
+  }
+  .nav-right {
+    margin-left: auto;
+    display: flex;
+    > *:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    .fa-power-off, .fa-key, .fa-recycle {
+      color: #209E91;
+    }
+  }
+  a:hover {
+    color: #209E91;
+  }
+}

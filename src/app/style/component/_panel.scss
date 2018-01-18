@@ -1,0 +1,105 @@
+.panel {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    //overflow: hidden;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .ui-grid {
+        //border: none;
+        //border-left: none;
+        //border-right: none;
+    }
+    .panel-header {
+        padding: 0 6px 0 $space-md;
+        font-size: $font-size-md;
+        background: #fff;
+        line-height: 40px;
+        position: relative;
+        &:after {
+            content: '';
+            background: colors(panel);
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 12px;
+            right: 6px;
+        }
+        .panel-actions {
+            margin-left: auto;
+            input,
+            button {
+                &:not(:first-child) {
+                    margin-left: 10px;
+                }
+            }
+            .search-field {
+                width: 300px;
+                background: none;
+                border: none;
+                border-bottom: solid 1px #ffffff;
+                padding-right: 20px;
+                & + .fa-search {
+                    margin-left: -20px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .panel-body {
+        padding: 15px 30px;
+        background: #fff;
+        //border: 1px solid #d4d4d4;
+        border-top: none;
+        .typhoon-ui-grid {
+            //margin: -15px -30px;
+            .btn-toolbar {
+                position: absolute;
+                top: 5px;
+                right: 15px;
+            }
+            .checkbox {
+                margin-top: 0;
+            }
+        }
+        .panel-body {
+            //padding: 0;
+        }
+    }
+    &.no-header {
+        .panel-body {
+            border-top: 1px solid #d4d4d4;
+        }
+    }
+    &.no-border {
+        .panel-body {
+            border: none;
+        }
+    }
+    .panel-footer {
+        //min-height: 5px;
+        padding: $space-md;
+        border-radius: 0;
+        //background: colors(panel);
+        &:empty {
+            padding: 0;
+            border-top: none;
+        }
+    }
+    & + .panel {
+        margin-bottom: $space-es;
+    }
+
+    margin-bottom: $space-es;
+
+    /*panel里面的panel-footer不需要背景色*/
+
+    .panel {
+        .panel-footer {
+            background-color: transparent;
+            min-height: 0;
+        }
+    }
+}

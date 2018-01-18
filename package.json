@@ -1,0 +1,65 @@
+{
+  "name": "react_manage",
+  "version": "1.0.0",
+  "description": "REACT DEMO",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --inline --progress --profile --colors",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/Alexander_txj/react_manage.git"
+  },
+  "author": "txj",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "antd": "^3.0.1",
+    "bootstrap": "^3.3.7",
+    "echarts": "3.3.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "moment": "^2.18.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-istanbul": "^4.1.1",
+    "babel-plugin-transform-decorators": "^6.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "copy-webpack-plugin": "4.0.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "0.26.1",
+    "expose-loader": "^0.7.3",
+    "extract-text-webpack-plugin": "2.0.0-rc.3",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.7.1",
+    "istanbul-instrumenter-loader": "^1.0.0",
+    "ng-annotate-webpack-plugin": "^0.2.1-pre",
+    "node-libs-browser": "2.0.0",
+    "node-sass": "^4.5.0",
+    "null-loader": "^0.1.1",
+    "phantomjs-prebuilt": "^2.1.4",
+    "postcss-loader": "1.2.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.2.1",
+    "webpack-spritesmith": "^0.3.3"
+  }
+}

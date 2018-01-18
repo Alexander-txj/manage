@@ -1,0 +1,26 @@
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 1280px;
+    }
+}
+
+.modal-body {
+    padding: 15px 30px;
+}
+
+.modal-content {
+    box-shadow: none !important;
+    //overflow: hidden;
+    //border-radius: 0;
+}
+
+.modal-title {
+    font-size: $font-size-md;
+}
+
+.view-image-modal {
+    .modal-dialog {
+        width: 80%;
+        text-align: center;
+    }
+}

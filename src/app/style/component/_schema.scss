@@ -1,0 +1,221 @@
+form.schema-container:before {
+    content: '* 表示必填项';
+    color: #E53F4D;
+    position: relative;
+    left: -12px;
+    bottom: 8px;
+}
+
+.schema-form-submit {
+    text-align: right;
+}
+
+.schema-form-section {
+    .form-group {
+        width: 80%;
+    }
+    &.col-xs-12 {
+        .form-group {
+            width: 100%;
+        }
+    }
+}
+
+* {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control-feedback.glyphicon {
+    display: none;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.help-block {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    margin: 0;
+}
+
+.gallery {
+    background: #dedede;
+    color: #444A4D;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    display: flex;
+    [flow-btn] {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .image-viewer {
+        min-height: 200px;
+        display: flex;
+        //align-items: center;
+    }
+    /*[flow-btn] {
+      width: 200px;
+      height: 200px;
+      border: dashed 1px #666;
+      display: block;
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+      &:before {
+        width: 2px;
+        height: 80%;
+      }
+      &:after {
+        height: 2px;
+        width: 80%;
+      }
+    }*/
+    figure {
+        width: 200px;
+        margin: 0;
+        //float: left;
+        //min-height: 200px;
+        overflow: hidden;
+        position: relative;
+        &:hover {
+            img {
+                transform: scale(1.04);
+            }
+            figcaption {
+                opacity: 1;
+            }
+        }
+        figcaption {
+            position: absolute;
+            background: rgba(0, 0, 0, .5);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity .35s;
+            &.overlay-failed {
+                opacity: 1;
+            }
+            .fa {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 30px;
+                color: #CF4646;
+                transform: translate(-50%, -50%);
+            }
+        }
+        img {
+            border-radius: 0;
+            padding: 0;
+            border: none;
+            transition: transform .35s;
+        }
+    }
+    .progress {
+        height: 5px;
+        border-radius: 0;
+        margin-bottom: 0;
+        &.failed {
+            .progress-bar {
+                background: #B82F2E;
+            }
+        }
+    }
+    .drop {
+        line-height: 34px;
+    }
+
+}
+
+tags-input {
+    padding: 0;
+    .tags {
+        border: none;
+    }
+}
+
+.multiSelect {
+    > button {
+        width: 100%;
+        text-align: left;
+
+        .caret {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+        }
+        .buttonLabel {
+            padding: 0;
+        }
+    }
+}
+
+//表单控件样式
+.moment-picker {
+    .moment-picker-container {
+        width: 350px;
+    }
+    .date-icon {
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        font-size: 20px;
+    }
+}
+
+// 数字范围输入框
+.schema-text-range {
+    .range-mark {
+        height: 34px;
+        line-height: 34px;
+    }
+    .help-block {
+        white-space: nowrap;
+    }
+    .schema-text-range-start {
+        width: 40%;
+        //margin-right: 20px;
+        &:after {
+            content: "至";
+            position: absolute;
+            right: -6px;
+            top: 50%;
+        }
+    }
+    .schema-text-range-end {
+        width: 40%;
+        .control-label {
+            visibility: hidden;
+        }
+    }
+}
+
+span.required-mark {
+    font-size: 20px;
+    position: absolute;
+    left: -15px;
+    top: 32px;
+    &:empty:before {
+        content: '*';
+        color: #E53F4D;
+    }
+
+    .no-required-mark & {
+        display: none;
+    }
+}
+
+//修复弹窗中打开多选框被覆盖的问题
+body > .ui-select-bootstrap.open {
+    z-index: 9999;
+}

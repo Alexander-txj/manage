@@ -1,0 +1,28 @@
+.app-sidebar {
+  background-color: #1C2B36;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  .logo {
+    height: 66px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 66px;
+    color: #209E91;
+  }
+  .ant-menu {
+    background-color: #1C2B36;
+    .ant-menu-item-selected {
+      background-color: #209E91 !important;
+    }
+    .ant-menu-sub {
+      background-color: #1C2B36 !important;
+    }
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    box-shadow: none;
+  }
+}
