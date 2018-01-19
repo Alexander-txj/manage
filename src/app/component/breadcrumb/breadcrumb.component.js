@@ -4,7 +4,6 @@ import { Breadcrumb } from 'antd';
 import './breadcrumb.scss';
 
 const breadcrumbNameMap = {
-    '/home': '首页',
     '/ContentTest': 'ContentTest'
 };
 
@@ -21,11 +20,13 @@ const BreadcrumbComponent = withRouter((props) => {
             </Breadcrumb.Item>
         );
     });
+
     const breadcrumbItems = [(
-        <Breadcrumb.Item key="home">
-            <Link to="/">首页</Link>
+        <Breadcrumb.Item key="/">
+            <Link to="/">Admin</Link>
         </Breadcrumb.Item>
     )].concat(extraBreadcrumbItems);
+
     return (
         <div className="breadcrumb">
             <Breadcrumb>
